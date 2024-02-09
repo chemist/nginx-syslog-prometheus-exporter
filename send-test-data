@@ -1,0 +1,6 @@
+#!/bin/bash
+
+while read s; do 
+  logger -h 127.0.0.1:5114 $s
+done <test-data
+
